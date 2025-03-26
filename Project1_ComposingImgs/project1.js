@@ -14,7 +14,7 @@ function composite(bgImg, fgImg, fgOpac, fgPos) {
             const fgImgX = x - fgPos.x;
             const fgImgY = y - fgPos.y;
 
-            // Bounds check
+            // Boundaries check
             if (fgImgX >= 0 && fgImgX < fgImg.width && fgImgY >= 0 && fgImgY < fgImg.height) {
 
                 // Pointers

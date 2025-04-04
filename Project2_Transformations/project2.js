@@ -3,7 +3,7 @@
 // The given rotation value is in degrees.
 function GetTransform( positionX, positionY, rotation, scale )
 {
-		// Get rotation radians
+		// Rotation radians
 		let theta = rotation * (Math.PI/180);
 
 		let cosTheta = Math.cos(theta);

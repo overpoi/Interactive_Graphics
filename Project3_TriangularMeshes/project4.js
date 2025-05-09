@@ -60,6 +60,7 @@ class MeshDrawer
 		this.yzSwapLoc = gl.getUniformLocation(this.prog, 'yzSwap');
 		this.showTexLoc = gl.getUniformLocation(this.prog, 'showTex'); 
 		this.colorLoc = gl.getUniformLocation(this.prog, 'color');
+		this.sampler = gl.getUniformLocation(this.prog, 'tex');
 
 		this.vertbuffer = gl.createBuffer(); 
 		this.texbuffer = gl.createBuffer(); 
@@ -185,7 +186,6 @@ class MeshDrawer
 		gl.activeTexture(gl.TEXTURE0); 
 		gl.bindTexture(gl.TEXTURE_2D, mytex); 
 
-		sampler = gl.getUniformLocation(this.prog, 'tex');
 		gl.useProgram( this.prog );
 		gl.uniform1i( sampler,0 );
 

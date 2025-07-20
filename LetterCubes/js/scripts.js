@@ -341,7 +341,6 @@ gui.add({ reset: resetGame }, 'reset').name('Reset Game');
 
 
 
-//STUDIA
 function isOverPlane(cube) {
 const localPos = cube.position.clone();
 // Inverse rotate the cube to match plane's orientation
